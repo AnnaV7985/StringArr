@@ -24,4 +24,6 @@ index++;
 }
 return arrSimb;
 }
-
+Console.WriteLine ($"Первый результат [{String.Join (" " , result1)}]");
+Console.WriteLine ($"Второй результат [{String.Join (" " , result2)}]");
+Console.WriteLine ($"Третий результат [{String.Join (" " , result3)}]");
