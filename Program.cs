@@ -6,3 +6,22 @@ Console.WriteLine ($"Второй массив строк [{String.Join (", " , 
 string[] simbol3 = new string [3]{"Russia", "Denmark", "Kazan"};
 Console.WriteLine ($"Третий массив строк [{String.Join (", " , simbol3)}]");
 
+string[ ]result1 = NewArray(simbol1);
+string[ ]result2 = NewArray(simbol2);
+string[ ]result3 = NewArray(simbol3);
+string [] NewArray (string[] array)
+{
+string[] arrSimb = new string [array.Length] ;
+int index = 0;
+for (int i = 0; i < array.Length; i++)
+{
+if (array[i].Length <= 3)
+{
+arrSimb[index] = array[i];
+index++;
+}
+
+}
+return arrSimb;
+}
+
